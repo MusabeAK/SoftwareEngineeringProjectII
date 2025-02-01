@@ -1,0 +1,306 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General layout settings */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+.App-header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+article p {
+  margin: 15px 0;
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Footer styles */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px 0;
+  color: #555;
+  font-size: 0.9em;
+}
+
+/* Tasks page */
+
+.tasks-page {
+  width: 80%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.task-form {
+  margin-bottom: 20px;
+}
+
+.task-form div {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.react-quill {
+  height: 150px;
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+.tasks-page {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Task Item */
+.task-item {
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 40px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.task-description {
+  margin-bottom: 8px;
+}
+
+.task-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 8px; /* Space above the toggle button */
+}
+
+.toggle-button {
+  display: inline; /* Make the toggle button a block element */
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  font-size: 12px;
+  font-weight: bold; /* Adjust size as needed */
+  text-align: center; /* Center text */
+  margin: 8px auto; /* Center horizontally */
+}
+
+.toggle-button:hover {
+  color: rgb(135, 215, 222);
+  background: none;
+}
+
+.add-button {
+  background: none;
+  color: rgb(18, 183, 216);
+  border: 1px solid rgb(18, 183, 216);
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.add-button:hover {
+  background: rgb(177, 216, 223);
+  color: white;
+  border: none;
+  transition: 0.3s ease-in;
+}
+
+.cancel-button {
+  background: none;
+  color: red;
+  padding: 5px;
+  border: 1px solid red;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.cancel-button:hover {
+  background: rgb(238, 126, 126);
+  color: white;
+  border: none;
+  transition: 0.2s ease-in;
+}
+
+.edit-button,
+.delete-button {
+  background: rgb(251, 251, 252);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 8px;
+  font-size: 15px; /* Adjust size as needed */
+  float: right;
+}
+
+.edit-button {
+  color: rgb(18, 183, 216); /* Edit icon color */
+}
+
+.delete-button {
+  color: rgb(235, 62, 62); /* Delete icon color */
+}
+
+.delete-button:hover,
+.edit-button:hover {
+  background: rgb(240, 243, 244);
+  transition: 1s ease;
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.3)
+  );
+  margin: 0px 0;
+  background-color: rgb(18, 183, 216);
+}
+
+/* Confirmation Modal */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+<<<<<<< Updated upstream
+=======
+
+/* Documents */
+.document-page {
+  padding: 20px;
+}
+
+.upload-section {
+  margin-bottom: 20px;
+}
+
+.documents-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.document-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.document-details {
+  flex-grow: 1;
+}
+
+.delete-icon {
+  color: red;
+  cursor: pointer;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+>>>>>>> Stashed changes
