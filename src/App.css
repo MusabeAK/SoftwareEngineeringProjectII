@@ -259,3 +259,48 @@ button:hover {
   justify-content: center;
   margin-top: 20px;
 }
+<<<<<<< Updated upstream
+=======
+
+/* Documents */
+.document-page {
+  padding: 20px;
+}
+
+.upload-section {
+  margin-bottom: 20px;
+}
+
+.documents-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.document-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.document-details {
+  flex-grow: 1;
+}
+
+.delete-icon {
+  color: red;
+  cursor: pointer;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+>>>>>>> Stashed changes

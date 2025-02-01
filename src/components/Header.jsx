@@ -2,9 +2,9 @@ import React from "react";
 
 function Header({ handleNavigation }) {
   return (
-    <header className="App-header">
+    <header class="text-lg font-bold bg-red-500 text-white">
       <nav>
-        <h1>Eye Disease Detection</h1>
+        <h1>Pathological Myopia Detection - Project Documentation</h1>
         <ul>
           <li>
             <a href="#" onClick={() => handleNavigation("home")}>
@@ -14,6 +14,11 @@ function Header({ handleNavigation }) {
           <li>
             <a href="#" onClick={() => handleNavigation("tasks")}>
               Tasks
+            </a>
+          </li>
+          <li>
+            <a href="#" onClick={() => handleNavigation("documents")}>
+              Documents
             </a>
           </li>
           <li>
