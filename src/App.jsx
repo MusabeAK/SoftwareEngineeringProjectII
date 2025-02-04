@@ -1,37 +1,33 @@
-import React, { useState } from "react";
-import "./App.css"; // Custom CSS
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Home from "./components/Home";
-import Tasks from "./components/tasks/Tasks";
-import Contacts from "./components/Contact";
-import Document from "./components/documents/Documents";
+import Intro from "./pages/Intro";
+import Team from "./pages/Team";
 
-function App() {
-  // State to hold the current content type
-  const [content, setContent] = useState("home");
-
-  // Function to update content based on the clicked link
-  const handleNavigation = (view) => {
-    setContent(view); // Update the state with the view
-  };
+const App = () => {
   return (
-    <>
-      <Header handleNavigation={handleNavigation} />
-      <div className="App">
-        <main>
-          <article>
-            {content === "home" && <Home />}
-            {content === "tasks" && <Tasks />}
-            {content === "documents" && <Document />}
-            {content === "contact" && <Contacts />}
-          </article>
-        </main>
-
-        <Footer />
+    <Router>
+      <div className="min-h-screen bg-gray-50">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Intro />} />
+          <Route path="/team" element={<Team />} />
+          <Route
+            path="/timeline"
+            element={
+              <div className="mx-auto w-full lg:w-3/4 px-4">Timeline Page</div>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <div className="mx-auto w-full lg:w-3/4 px-4">Contact Page</div>
+            }
+          />
+        </Routes>
       </div>
-    </>
+    </Router>
   );
-}
+};
 
 export default App;
