@@ -17,6 +17,7 @@ const teamMembers = [
     about:
       "Specializing in deep learning and computer vision with a focus on medical image processing. Passionate about applying AI in healthcare...",
     image: collins,
+    page: "/collins"
   },
   {
     name: "Kyomuhendo Precious",
@@ -24,6 +25,7 @@ const teamMembers = [
     about:
       "Expert in React and modern web technologies. Dedicated to creating intuitive and accessible user interfaces for medical applications...",
     image: precious,
+    page: "/precious"
   },
   {
     name: "Musabe Abdul Karim",
@@ -31,6 +33,7 @@ const teamMembers = [
     about:
       "Experienced in building scalable APIs and managing data pipelines. Focused on creating robust systems for medical data processing...",
     image: karim,
+    page: "/karim"
   },
   {
     name: "Muyama Monica",
@@ -38,6 +41,7 @@ const teamMembers = [
     about:
       "Skilled in data analysis and technical documentation. Passionate about ensuring our research meets the highest academic standards...",
     image: monica,
+    page: "/monica"
   },
 ];
 
@@ -77,9 +81,12 @@ const TeamPage = () => {
                 {member.position}
               </h3>
               <p className="text-gray-600 mb-4 max-w-2xl">{member.about}</p>
-              <button className="inline-flex items-center px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors duration-300">
-                Read More
-              </button>
+              <a 
+                href={member.page} 
+                className="inline-flex items-center px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors duration-300"
+              >
+                Read Tasks
+              </a>
             </div>
           </div>
         ))}

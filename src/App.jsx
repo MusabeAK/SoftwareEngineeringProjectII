@@ -3,6 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Intro from "./pages/Intro";
 import Team from "./pages/Team";
+import Documents from "./pages/documents"
+import Monica from "./pages/monica";
+import Precious from "./pages/precious";
+import Karim from "./pages/karim";
+import Collins from "./pages/collins";
+
 
 const App = () => {
   return (
@@ -12,6 +18,12 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Intro />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/documents" element={<Documents/>}/>
+          <Route path="/precious" element={<Precious/>}/>
+          <Route path="/karim" element={<Karim/>}/>
+          <Route path="/collins" element={<Collins/>}/>
+          <Route path="/monica" element={<Monica/>}/>
+
           <Route
             path="/timeline"
             element={
