@@ -8,6 +8,7 @@ import Monica from "./pages/monica";
 import Precious from "./pages/precious";
 import Karim from "./pages/karim";
 import Collins from "./pages/collins";
+import Timeline from "./pages/timeLine";
 
 
 const App = () => {
@@ -24,12 +25,7 @@ const App = () => {
           <Route path="/collins" element={<Collins/>}/>
           <Route path="/monica" element={<Monica/>}/>
 
-          <Route
-            path="/timeline"
-            element={
-              <div className="mx-auto w-full lg:w-3/4 px-4">Timeline Page</div>
-            }
-          />
+          <Route path="/timeLine" element={ <Timeline/>}/>
           <Route
             path="/contact"
             element={
