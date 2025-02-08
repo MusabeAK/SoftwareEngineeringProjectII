@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import collins from "../assets/collins.jpeg";
 import precious from "../assets/precious.jpeg";
 import karim from "../assets/karim.jpeg";
@@ -81,12 +82,12 @@ const TeamPage = () => {
                 {member.position}
               </h3>
               <p className="text-gray-600 mb-4 max-w-2xl">{member.about}</p>
-              <a 
-                href={member.page} 
+              <Link 
+                to={member.page} 
                 className="inline-flex items-center px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors duration-300"
               >
                 Read Tasks
-              </a>
+              </Link>
             </div>
           </div>
         ))}
