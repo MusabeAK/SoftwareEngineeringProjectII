@@ -11,13 +11,16 @@ const Header = () => {
     { name: "Our Team", path: "/team" },
     { name: "Project Timeline", path: "/timeline" },
     { name: "Contact", path: "/contact" },
+    { name: "Documents", path: "/documents" },
+
+
   ];
 
   return (
     <div className="w-full flex justify-center">
       <header className="w-full lg:w-3/4 bg-teal-600 px-4">
         <nav className="flex items-center justify-between h-16">
-          <div className="text-white text-xl font-semibold">Blog</div>
+          <div className="text-white text-xl font-semibold">MyopiaDX Blog</div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
