@@ -3,9 +3,11 @@ import React from "react";
 const Documents = () => {
   const pdfFiles = [
     "project_proposal.pdf",
+    "Software Requirements Specification(SRS).pdf",
     "Pathological Myopia report.pdf",
     "Interview questions.pdf",
     "Questionnaire.pdf",
+
   ];
 
   const handleViewDocument = (file) => {
